@@ -1,0 +1,129 @@
+:root {
+    --turquoise: #00d38e;
+    --forest: #193129;
+    --limeGreen: #c7e995;
+    --brightGreen: #01863c;
+    font-size: 16px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    /* max-width: 120em; */
+  }
+  
+  body {
+    background-color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    overflow: auto;
+  }
+  header {
+    /* width: 100%; */
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    padding: 5.56rem 7.625rem 0;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .1);
+    white-space: nowrap;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  
+  header .logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: default;
+    color: white;
+    padding: 1rem 1rem 1rem 1rem;
+    transition: .3s;
+  }
+  
+  header .logo:hover {
+    color: var(--brightGreen);
+    transition: .3s;
+  }
+  
+  header .navbar a {
+    height: 1.94rem;
+    font-size: 1.44rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    margin: 0 0 0 5.938rem;
+    transition: .3s;
+  }
+  
+  header .navbar a:hover {
+    color: var(--brightGreen);
+    transition: .3s;
+  }
+  
+  header .sidebar li {
+    display: none;
+  }
+  
+  
+  header .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.459);
+    backdrop-filter: blur(10px);
+    box-shadow: -5px 0 10px rgba(0, 0, 0, .1);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  header .sidebar li {
+    width: 100%;
+  }
+  
+  header .sidebar a {
+    margin: 1rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+  }
+  
+  header .sidebar a:hover {
+    color: var(--brightGreen);
+    transition: .3s;
+  }
+  
+  header .sidebar .close {
+    display: flex;
+  }
+  
+  header .sidebar .close:hover svg {
+    fill: rgb(20, 146, 83);
+    transition: .3s;
+  }
+  
+  header .burger {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  header .burger:hover svg {
+    fill: rgb(20, 146, 83);
+  }
